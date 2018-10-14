@@ -24,6 +24,7 @@ namespace MLTest
 
             Evaluate(model);
             Predict(model);
+            await model.WriteAsync("e:\\temp\\model.zip");
             Console.ReadKey();
         }
 
